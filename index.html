@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duo Hub  Local services in Jalandhar</title>
+<meta name="description" content="Find and request trusted local service providers in Jalandhar, Punjab.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#home">Duo<span>Hub</span></a>
+  <nav aria-label="Main">
+    <a href="#providers"><b>Find providers</b>Browse and filter</a>
+    <a href="#request"><b>Request a service</b>Send by email</a>
+    <a href="#status"><b>My requests</b>Track progress</a>
+  </nav>
+</header>
+
+<main>
+
+<!--- HOME + SERVICE CATEGORIES -->
+<section class="view" id="home">
+  <div class="hero">
+    <div>
+      <span class="badge">Now serving Jalandhar, Punjab</span>
+      <h1>Two people. One job done right.</h1>
+      <p>Duo Hub pairs you with trusted plumbers, electricians, cleaners, tutors and stylists in Jalandhar. Pick a provider, send a request, follow its progress.</p>
+      <a class="btn" href="#providers">Find a provider</a>
+      <a class="btn ghost" href="#request">Request a service</a>
+      <ul class="stats">
+        <li><b>5</b>verified providers</li>
+        <li><b>5</b>service categories</li>
+        <li><b>4.7</b>average rating</li>
+      </ul>
+    </div>
+    <div class="duo" aria-hidden="true"><i></i><i></i><em></em></div>
+  </div>
+  <h2>Browse by category</h2>
+  <ul class="cats">
+    <li><a href="#p1"><b>Plumbing</b>Gurpreet Plumbing Works</a></li>
+    <li><a href="#p2"><b>Electrical</b>Bright Spark Electricals</a></li>
+    <li><a href="#p3"><b>Cleaning</b>CleanNest Home Care</a></li>
+    <li><a href="#p4"><b>Tutoring</b>Simran Home Tutors</a></li>
+    <li><a href="#p5"><b>Beauty</b>Glow &amp; Co at Home</a></li>
+  </ul>
+</section>
+
+<!-- SEARCH / FILTER  -->
+<section class="view" id="providers">
+  <h1>Find a provider</h1>
+
+  <label class="search">Search providers
+    <input type="search" id="search" placeholder="Try plumber, tutor or Model Town">
+  </label>
+
+  <span class="fgroup">Category</span>
+  <input type="radio" name="c" id="c-all" checked><label class="fl" for="c-all">All</label>
+  <input type="radio" name="c" id="c-plumbing"><label class="fl" for="c-plumbing">Plumbing</label>
+  <input type="radio" name="c" id="c-electrical"><label class="fl" for="c-electrical">Electrical</label>
+  <input type="radio" name="c" id="c-cleaning"><label class="fl" for="c-cleaning">Cleaning</label>
+  <input type="radio" name="c" id="c-tutoring"><label class="fl" for="c-tutoring">Tutoring</label>
+  <input type="radio" name="c" id="c-beauty"><label class="fl" for="c-beauty">Beauty</label>
+
+  <span class="fgroup">Rating</span>
+  <input type="radio" name="r" id="r-all" checked><label class="fl" for="r-all">Any rating</label>
+  <input type="radio" name="r" id="r-hi"><label class="fl" for="r-hi">4.7 and above</label>
+
+  <span class="fgroup">Availability</span>
+  <input type="radio" name="a" id="a-all" checked><label class="fl" for="a-all">Any day</label>
+  <input type="radio" name="a" id="a-today"><label class="fl" for="a-today">Available today</label>
+
+  <ul class="results">
+    <li class="card" data-c="plumbing" data-r="hi" data-t="yes">
+      <h3><a href="#p1">Gurpreet Plumbing Works</a></h3>
+      <p>Plumbing, Model Town</p>
+      <span class="stars" style="--r:4.8" role="img" aria-label="4.8 out of 5 stars"></span> 4.8
+      <p>From ₹300</p><span class="tag">Available today</span>
+    </li>
+    <li class="card" data-c="electrical" data-r="lo" data-t="no">
+      <h3><a href="#p2">Bright Spark Electricals</a></h3>
+      <p>Electrical, Adarsh Nagar</p>
+      <span class="stars" style="--r:4.6" role="img" aria-label="4.6 out of 5 stars"></span> 4.6
+      <p>From ₹350</p>
+    </li>
+    <li class="card" data-c="cleaning" data-r="hi" data-t="yes">
+      <h3><a href="#p3">CleanNest Home Care</a></h3>
+      <p>Cleaning, Jalandhar Cantt</p>
+      <span class="stars" style="--r:4.7" role="img" aria-label="4.7 out of 5 stars"></span> 4.7
+      <p>From ₹499</p><span class="tag">Available today</span>
+    </li>
+    <li class="card" data-c="tutoring" data-r="hi" data-t="yes">
+      <h3><a href="#p4">Simran Home Tutors</a></h3>
+      <p>Tutoring, Nakodar Road</p>
+      <span class="stars" style="--r:4.9" role="img" aria-label="4.9 out of 5 stars"></span> 4.9
+      <p>From ₹250 per hour</p><span class="tag">Available today</span>
+    </li>
+    <li class="card" data-c="beauty" data-r="lo" data-t="no">
+      <h3><a href="#p5">Glow &amp; Co at Home</a></h3>
+      <p>Beauty, Urban Estate</p>
+      <span class="stars" style="--r:4.5" role="img" aria-label="4.5 out of 5 stars"></span> 4.5
+      <p>From ₹399</p>
+    </li>
+  </ul>
+  <p class="empty">No provider matches these filters yet. Choose “All” or “Any” to see everyone.</p>
+</section>
+
+<!-- PROVIDER PROFILES (availability + reviews) -->
+<section class="view" id="p1">
+  <a class="back" href="#providers">Back to providers</a>
+  <h1>Gurpreet Plumbing Works</h1>
+  <p class="meta">Plumbing in Model Town, Jalandhar. 12 years experience. Verified provider.</p>
+  <p><span class="stars" style="--r:4.8" role="img" aria-label="4.8 out of 5 stars"></span> 4.8 from 24 reviews. From ₹300.</p>
+  <p>Leak repair, tap and pipe fitting, bathroom fittings.</p>
+  <h2>Availability</h2>
+  <table class="av"><thead><tr><th>Day<th>Morning<th>Afternoon<th>Evening</thead>
+    <tr><th>Mon<td class="o">Open<td class="o">Open<td class="l">Few slots
+    <tr><th>Tue<td class="o">Open<td class="o">Open<td class="o">Open
+    <tr><th>Wed<td class="l">Few slots<td class="o">Open<td class="o">Open
+    <tr><th>Thu<td class="o">Open<td class="o">Open<td class="l">Few slots
+    <tr><th>Fri<td class="o">Open<td class="l">Few slots<td class="x">Off
+    <tr><th>Sat<td class="o">Open<td class="o">Open<td class="o">Open
+    <tr><th>Sun<td class="x">Off<td class="x">Off<td class="x">Off
+  </table>
+  <h2>Reviews</h2>
+  <blockquote>Fixed a kitchen leak in under an hour and cleaned up after.<footer>Harpreet, Model Town  5 stars</footer></blockquote>
+  <blockquote>Fair price, arrived on time.<footer>Rohit, Basti Nau  5 stars</footer></blockquote>
+  <a class="btn" href="#request" data-provider="Gurpreet Plumbing Works">Request this provider</a>
+</section>
+
+<section class="view" id="p2">
+  <a class="back" href="#providers">Back to providers</a>
+  <h1>Bright Spark Electricals</h1>
+  <p class="meta">Electrical work in Adarsh Nagar, Jalandhar. 8 years experience. Verified provider.</p>
+  <p><span class="stars" style="--r:4.6" role="img" aria-label="4.6 out of 5 stars"></span> 4.6 from 17 reviews. From ₹350.</p>
+  <p>Wiring repair, fan and light fitting, inverter and MCB checks.</p>
+  <h2>Availability</h2>
+  <table class="av"><thead><tr><th>Day<th>Morning<th>Afternoon<th>Evening</thead>
+    <tr><th>Mon<td class="x">Off<td class="l">Few slots<td class="o">Open
+    <tr><th>Tue<td class="x">Off<td class="o">Open<td class="o">Open
+    <tr><th>Wed<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Thu<td class="x">Off<td class="l">Few slots<td class="o">Open
+    <tr><th>Fri<td class="o">Open<td class="o">Open<td class="l">Few slots
+    <tr><th>Sat<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Sun<td class="x">Off<td class="x">Off<td class="x">Off
+  </table>
+  <h2>Reviews</h2>
+  <blockquote>Found the cause of our tripping MCB quickly.<footer>Manpreet, Adarsh Nagar  5 stars</footer></blockquote>
+  <blockquote>Good work, slightly late on the day.<footer>Anil, Kapurthala Road  4 stars</footer></blockquote>
+  <a class="btn" href="#request" data-provider="Bright Spark Electricals">Request this provider</a>
+</section>
+
+<section class="view" id="p3">
+  <a class="back" href="#providers">Back to providers</a>
+  <h1>CleanNest Home Care</h1>
+  <p class="meta">Home cleaning in Jalandhar Cantt. Team of 4. Verified provider.</p>
+  <p><span class="stars" style="--r:4.7" role="img" aria-label="4.7 out of 5 stars"></span> 4.7 from 31 reviews. From ₹499.</p>
+  <p>Deep cleaning, kitchen and bathroom cleaning, sofa and carpet cleaning.</p>
+  <h2>Availability</h2>
+  <table class="av"><thead><tr><th>Day<th>Morning<th>Afternoon<th>Evening</thead>
+    <tr><th>Mon<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Tue<td class="o">Open<td class="l">Few slots<td class="x">Off
+    <tr><th>Wed<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Thu<td class="l">Few slots<td class="o">Open<td class="x">Off
+    <tr><th>Fri<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Sat<td class="o">Open<td class="o">Open<td class="o">Open
+    <tr><th>Sun<td class="l">Few slots<td class="x">Off<td class="x">Off
+  </table>
+  <h2>Reviews</h2>
+  <blockquote>The kitchen looked new again. Careful with our furniture.<footer>Jasleen, Cantt 5 stars</footer></blockquote>
+  <blockquote>On time and thorough.<footer>Vikram, Guru Teg Bahadur Nagar  4 stars</footer></blockquote>
+  <a class="btn" href="#request" data-provider="CleanNest Home Care">Request this provider</a>
+</section>
+
+<section class="view" id="p4">
+  <a class="back" href="#providers">Back to providers</a>
+  <h1>Simran Home Tutors</h1>
+  <p class="meta">Home tuition on Nakodar Road, Jalandhar. Classes 6 to 12, maths and science.</p>
+  <p><span class="stars" style="--r:4.9" role="img" aria-label="4.9 out of 5 stars"></span> 4.9 from 42 reviews. From ₹250 per hour.</p>
+  <p>One-to-one home tuition with a weekly progress note for parents.</p>
+  <h2>Availability</h2>
+  <table class="av"><thead><tr><th>Day<th>Morning<th>Afternoon<th>Evening</thead>
+    <tr><th>Mon<td class="x">Off<td class="l">Few slots<td class="o">Open
+    <tr><th>Tue<td class="x">Off<td class="o">Open<td class="o">Open
+    <tr><th>Wed<td class="x">Off<td class="l">Few slots<td class="o">Open
+    <tr><th>Thu<td class="x">Off<td class="o">Open<td class="o">Open
+    <tr><th>Fri<td class="x">Off<td class="o">Open<td class="l">Few slots
+    <tr><th>Sat<td class="o">Open<td class="o">Open<td class="x">Off
+    <tr><th>Sun<td class="x">Off<td class="x">Off<td class="x">Off
+  </table>
+  <h2>Reviews</h2>
+  <blockquote>My son’s maths marks went up within two months.<footer>Kulwinder, Nakodar Road  5 stars</footer></blockquote>
+  <blockquote>Patient and clear. The weekly note helps a lot.<footer>Neha, Model Town  5 stars</footer></blockquote>
+  <a class="btn" href="#request" data-provider="Simran Home Tutors">Request this provider</a>
+</section>
+
+<section class="view" id="p5">
+  <a class="back" href="#providers">Back to providers</a>
+  <h1>Glow &amp; Co at Home</h1>
+  <p class="meta">Beauty services at your home, Urban Estate, Jalandhar. Verified provider.</p>
+  <p><span class="stars" style="--r:4.5" role="img" aria-label="4.5 out of 5 stars"></span> 4.5 from 19 reviews. From ₹399.</p>
+  <p>Haircut, facial, waxing and bridal makeup at home.</p>
+  <h2>Availability</h2>
+  <table class="av"><thead><tr><th>Day<th>Morning<th>Afternoon<th>Evening</thead>
+    <tr><th>Mon<td class="x">Off<td class="x">Off<td class="x">Off
+    <tr><th>Tue<td class="o">Open<td class="o">Open<td class="l">Few slots
+    <tr><th>Wed<td class="o">Open<td class="l">Few slots<td class="x">Off
+    <tr><th>Thu<td class="o">Open<td class="o">Open<td class="o">Open
+    <tr><th>Fri<td class="l">Few slots<td class="o">Open<td class="o">Open
+    <tr><th>Sat<td class="o">Open<td class="o">Open<td class="o">Open
+    <tr><th>Sun<td class="o">Open<td class="l">Few slots<td class="x">Off
+  </table>
+  <h2>Reviews</h2>
+  <blockquote>Lovely facial, very hygienic setup.<footer>Anmol, Urban Estate  5 stars</footer></blockquote>
+  <blockquote>Good service. Needs a day’s notice.<footer>Ritu, Model Town  4 stars</footer></blockquote>
+  <a class="btn" href="#request" data-provider="Glow &amp; Co at Home">Request this provider</a>
+</section>
+
+<!-- SERVICE REQUEST (sent by email) -->
+<section class="view" id="request">
+  <h1>Request a service</h1>
+  <p class="note">Sending opens your email app with these details filled in. Press Send there to deliver the request to Duo Hub.</p>
+  <form action="mailto:requests@duohub.example" method="post" enctype="text/plain">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Mobile number<input name="phone" type="tel" required pattern="[6-9][0-9]{9}" title="10-digit mobile number" autocomplete="tel"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Provider
+      <select name="provider" required>
+        <option value="">Choose a provider</option>
+        <option>Gurpreet Plumbing Works</option>
+        <option>Bright Spark Electricals</option>
+        <option>CleanNest Home Care</option>
+        <option>Simran Home Tutors</option>
+        <option>Glow &amp; Co at Home</option>
+      </select>
+    </label>
+    <label>Preferred date<input name="date" type="date" required></label>
+    <label>Preferred time
+      <select name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+    </label>
+    <label class="wide">Area in Jalandhar<input name="area" required placeholder="For example, Model Town"></label>
+    <label class="wide">What do you need?<textarea name="details" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Send request by email</button>
+  </form>
+</section>
+
+<!-- REQUEST STATUS -->
+<section class="view" id="status">
+  <h1>My requests</h1>
+  <p class="note">Sample requests. Status changes are made by Duo Hub and also sent to you by email.</p>
+  <article class="req">
+    <h3>Tap repair with Gurpreet Plumbing Works</h3><p>Status: Submitted</p>
+    <ol class="steps s1"><li>Submitted<li>Accepted<li>In progress<li>Completed</ol>
+  </article>
+  <article class="req">
+    <h3>Fan fitting with Bright Spark Electricals</h3><p>Status: In progress</p>
+    <ol class="steps s3"><li>Submitted<li>Accepted<li>In progress<li>Completed</ol>
+  </article>
+  <article class="req">
+    <h3>Maths tuition with Simran Home Tutors</h3><p>Status: Completed</p>
+    <ol class="steps s4"><li>Submitted<li>Accepted<li>In progress<li>Completed</ol>
+  </article>
+  <article class="req">
+    <h3>Facial with Glow &amp; Co at Home</h3><p class="declined">Status: Declined. The provider is off that day. Try another date.</p>
+  </article>
+</section>
+
+</main>
+
+<footer><p>Duo Hub, Lovely Professional University, Jalandhar, Punjab.</p></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
